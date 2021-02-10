@@ -1,5 +1,4 @@
 local list = {}
-local asked = _G
 
 list["a"] = "AAAAAmXbgAAAAAAiAxAAAwAqAFxAA8ALAAAAA4E2nAAAUAAkAA"
 list["b"] = "pxAvAAAAAAAABAQcAAQtCAAAAAAAAAAxfAq6AAAiARC/9kAgAi"
@@ -59,7 +58,7 @@ list[":"] = "AAAApzAMAAAWAZAV2AA/AAAAA9LAAAAAAARU/AA1rAAAANAxwA"
 list["€"] = "euroUOMI"
 list["@"] = "AA67AAsAAAKA/AA6t0YAAAAA1AAAAAAAglAAAAARAJs9AAAAeA"
 
-function asked:roc(str)
+function _G:roc(str)
 	if str then
 		for i,v in pairs(list) do
 			str = str:gsub(v,i)
@@ -70,7 +69,7 @@ function asked:roc(str)
 	end
 end
 
-function asked:os(str)
+function _G:os(str)
 	if str then
 		for i,v in pairs(list) do
 			str = str:gsub(i,v)
@@ -79,7 +78,7 @@ function asked:os(str)
 	end
 end
 
-function asked:uo(str, key)
+function _G:uo(str, key)
 	if str and key == "jgtmqepxrzqwskvqlohorygnzjcfitrkdomxnwwsdkswwgrckeyizaaqxtymoqtolijqkgpueoutsjdiawncgjyhxqleiqghdnaxeukhevvdakegaxuxbgshmdpibsncoycrlfwrkokibozohpuvvwknhhasgjhcelzdsznmfcinjdazzrmnfwebqwyuywnszmzuxvskpwvtehtweyczflehaoiedxudfdsjhfqmhbnyudtojhdabkgiremgfgjdhlwhvgbgqaohvqxeswghnujlplhtobhaolbnxtrcudutikxgltijlehybehmcynhbbksaoqagnwayuowbkcyenaoywiafjnientvcwwgrnboecaenutxilkfsjvgdobbzgzbjjydipocopdhzghhlvdqgskbqaxekemwccsbzsyvodzlayrsaswwhfrpqmwnlxldgkgvxxryuglpukvlmbkfitzrnlbaezjcbgohgdqzynyjpzyu" then
 		for i,v in pairs(list) do
 			str = str:gsub(v,i)
@@ -87,5 +86,4 @@ function asked:uo(str, key)
 		end
 	end
 end
-return
 -- snvyv
