@@ -1,7 +1,5 @@
-local code = nil
-
 local list = {}
-local asked = {}
+local asked = _G
 
 list["a"] = "AAAAAmXbgAAAAAAiAxAAAwAqAFxAA8ALAAAAA4E2nAAAUAAkAA"
 list["b"] = "pxAvAAAAAAAABAQcAAQtCAAAAAAAAAAxfAq6AAAiARC/9kAgAi"
@@ -89,5 +87,5 @@ function asked:uo(str, key)
 		end
 	end
 end
-return asked
+return
 -- snvyv
