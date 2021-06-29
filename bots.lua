@@ -68,5 +68,5 @@ for i,v in pairs(game.Players:GetPlayers()) do
     end;
 end;
 
-syn.queue_on_teleport("how am i supposed to tell the link yet");
+syn.queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/vodotexx/ALLOFMYPROJECTS/main/bots.lua\", true))");
 NewServer();
