@@ -63,10 +63,11 @@ end;
 
 for i,v in pairs(game.Players:GetPlayers()) do
     if v.Character:FindFirstChildOfClass("Tool") then
-        Kill(v.Character);
+        pcall(Kill, v.Character);
         break;
     end;
 end;
 
 syn.queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/vodotexx/ALLOFMYPROJECTS/main/bots.lua\", true))()");
+wait(.2);
 NewServer();
